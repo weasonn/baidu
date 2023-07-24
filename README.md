@@ -2,4 +2,6 @@
 屏蔽百度首页新闻推荐流
 
 之前我尝试通过abp插件屏蔽js来屏蔽百度首页新闻推荐流，但是失败了，它仍然会不定时跳转到新闻推荐。查看代码发现其实是百度服务器端通过session中的curmod参数自动判断，并通过switchcard函数跳转到推荐流。后来找了半天发现gayhub有个大佬写了Tampermonkey扩展屏蔽百度主页新闻推荐流，于是通过"拿来吧你"方式，我copy了一下自制了一个chrome插件，可以屏蔽pc端和wap端的新闻推荐流，大家有需要的可以自行下载使用。
+
+
 源代码链接：https://github.com/WLongSAMA/NoBaiduNews
